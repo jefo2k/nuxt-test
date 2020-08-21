@@ -1,40 +1,30 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        nuxt-test
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+    <h1>Welcome to the Nuxt test app!</h1>
+    <a-alert message="We are using antd design system." type="info" show-icon />
+    <ul>
+      <li>Click <nuxt-link to="/section-one">here</nuxt-link> to enter in the section one.</li>
+      <li>Click <nuxt-link to="/section-two">here</nuxt-link> to enter in the section two.</li>
+    </ul>
+    <a-alert message="Enjoy the ride!" type="success" show-icon />
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import Vue from "vue";
 
-export default Vue.extend({})
+export default Vue.extend({
+  head: {
+    title: 'Nuxt Test - Home page'
+  },
+  data() {
+    return {}
+  },
+});
 </script>
 
 <style>
-.container {
+/* .container {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
@@ -44,16 +34,8 @@ export default Vue.extend({})
 }
 
 .title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
@@ -71,5 +53,5 @@ export default Vue.extend({})
 
 .links {
   padding-top: 15px;
-}
+} */
 </style>
