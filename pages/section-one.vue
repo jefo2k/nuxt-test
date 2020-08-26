@@ -9,7 +9,10 @@
         </div>
       </a-layout-header>
       <a-layout>
-        <a-layout-sider width="200" style="background: #fff">
+        <a-layout-sider width="240" style="background: #fff; border: 1px solid rgb(235, 237, 240);">
+          <div style="padding: 30px 70px 15px 70px;">
+            <a-avatar :size="100" icon="user" />
+          </div>
           <a-menu
             mode="inline"
             :default-selected-keys="['1']"
@@ -63,7 +66,7 @@
             </a-sub-menu>
           </a-menu>
         </a-layout-sider>
-        <a-layout style="padding: 0 24px 24px">
+        <a-layout style="padding: 0 24px 24px; background-color: #fff">
           <a-breadcrumb style="margin: 16px 0">
             <a-breadcrumb-item>Home</a-breadcrumb-item>
             <a-breadcrumb-item>List</a-breadcrumb-item>
@@ -88,8 +91,13 @@
             <br /><br />
             <a-timeline>
               <a-timeline-item>
+                <p><b>2015-09-01</b></p>
                 <div style="border: 1px solid #69C0FF; padding: 8px 15px; border-radius: 4px; background: #E6F7FF;">
-                  Create a services site 2015-09-01
+                  Create a services site 2015-09-01<br>
+                  Create a services site 2015-09-01<br>Create a services site 2015-09-01<br>
+                  Create a services site 2015-09-01<br>Create a services site 2015-09-01<br>
+                  Create a services site 2015-09-01<br>Create a services site 2015-09-01<br>Create a services site 2015-09-01<br>
+
                 </div>
               </a-timeline-item>
               <a-timeline-item>
@@ -98,6 +106,7 @@
                   type="info"/>
               </a-timeline-item>
               <a-timeline-item>
+                <p><b>2015-09-01</b></p>
                 <a-alert
                   message="Info Text"
                   description="Info Description Info Description Info Description Info Description"
@@ -167,14 +176,20 @@ export default Vue.extend({
   /* max-width: 1100px; */
   padding: 0 24px;
   background: #fff;
-  filter: drop-shadow(0px 3px 10px #f0f0f0);
+  border-bottom: 1px solid rgb(235, 237, 240);
+  /* filter: drop-shadow(0px 3px 10px #f0f0f0); */
   /* box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05); */
   /* box-shadow: 5px 8px 124px 5px rgba(208, 216, 243, 0.6); */
+}
+
+.content {
+  background: #fff;
 }
 
 .footer {
   display: flex;
   justify-content: center;
   font-size: 12px;
+  background: #fff;
 }
 </style>
